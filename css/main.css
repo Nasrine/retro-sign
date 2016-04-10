@@ -31,11 +31,16 @@ svg {
   cursor: pointer;
 }
 
+.lines path {
+  stroke-dasharray: 0, 480;
+}
+
 .is-engaged.lines path {
   animation: lines 1s linear forwards;
   }
 
   @keyframes lines {
+
     0% {
     stroke-dasharray: 0, 480;
   }
@@ -43,10 +48,25 @@ svg {
   100% {
     stroke-dasharray: 480, 480;
   }
-  }
-  color: orange;
 }
 
 .lines path {
   stroke-dasharray: 0, 480;
+}
+
+.is-engaged .engage path {
+  transition: all 1s linear;
+  fill: #f60;
+}
+
+.engage path:nth-child(2) {
+  transition-delay: 2s;
+}
+
+.is-engaged .btn path:nth-child(2) {
+  fill: orange;
+}
+
+.btn:active {
+  transform: scale(1, 1);
 }
