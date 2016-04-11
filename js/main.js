@@ -1,8 +1,7 @@
 $('svg').on('click', function () {
-  $('svg').addClass('is-engage');
+  $('svg').toggleClass('is-engaged');
 });
 
 $('svg').on('mouseover', function () {
   $('.btn').toggleClass('.btn:active');
 });
-

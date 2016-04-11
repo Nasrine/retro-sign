@@ -35,23 +35,19 @@ svg {
   stroke-dasharray: 0, 480;
 }
 
-.is-engaged.lines path {
+.is-engaged .lines path {
   animation: lines 1s linear forwards;
-  }
+}
 
-  @keyframes lines {
+@keyframes lines {
 
-    0% {
+  0% {
     stroke-dasharray: 0, 480;
   }
 
   100% {
     stroke-dasharray: 480, 480;
   }
-}
-
-.lines path {
-  stroke-dasharray: 0, 480;
 }
 
 .is-engaged .engage path {
